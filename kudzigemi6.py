@@ -461,13 +461,15 @@ class RateLimiter:
 # --- Configuration ---
 # Use environment variables for sensitive configuration
 import os
-from dotenv import load_dotenv
+import requests
+#from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+#load_dotenv()
 
 # Get API key from environment variable
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = st.secrets["API_KEY"]
 
 if not GEMINI_API_KEY:
     st.error("""
