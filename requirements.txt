@@ -1,0 +1,18 @@
+# Core requirements for Kudzi Learning Platform
+streamlit>=1.28.0
+google-generativeai>=0.3.0
+deep-translator>=1.11.0
+pandas>=1.5.0
+python-dotenv>=1.0.0
+
+# MCP (Model Context Protocol) support
+requests>=2.31.0
+
+# Optional features (install for full functionality)
+# SpeechRecognition>=3.10.0
+# pyttsx3>=2.90
+# Pillow>=9.0.0
+
+# Installation commands:
+# pip install -r requirements.txt
+# pip install SpeechRecognition pyttsx3 Pillow  # For voice and image features
